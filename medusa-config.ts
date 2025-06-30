@@ -33,6 +33,7 @@ module.exports = defineConfig({
               region: process.env.S3_REGION,
               bucket: process.env.S3_BUCKET,
               endpoint: process.env.S3_ENDPOINT,
+              authentication_method: "s3-iam-role",
               // other options...
             },
           },
